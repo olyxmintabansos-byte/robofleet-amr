@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #060709;
+    color: #e2e8f0;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+}
+
+/* Movement #2 Brutalist SCADA & Industrial Robotics HUD */
+.scada-panel {
+  background: #0b0d12;
+  border: 2px solid rgba(234, 179, 8, 0.35);
+  box-shadow: 4px 4px 0px rgba(234, 179, 8, 0.15);
+}
+
+.scada-panel-danger {
+  background: #12090b;
+  border: 2px solid rgba(239, 68, 68, 0.5);
+  box-shadow: 4px 4px 0px rgba(239, 68, 68, 0.2);
+}
+
+.scada-grid-lines {
+  background-image: linear-gradient(to right, rgba(234, 179, 8, 0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(234, 179, 8, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.hazard-stripes {
+  background: repeating-linear-gradient(
+    -45deg,
+    #eab308,
+    #eab308 10px,
+    #060709 10px,
+    #060709 20px
+  );
+}
